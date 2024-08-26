@@ -5,18 +5,18 @@ Data analysis tools for electromagnetic field measurement by particle deflectome
 **PRADICAMENT** [1] is a set of tools for analyzing proton radiography (PRAD) fluence images [2,3] .
 The present scope of the project is a fast algorithm to 
 process 1-D fluence profiles to obtain the line-integrated magnetic or electric field.
-A companion manuscript [1] describes the theory, setup, and notation used here in detail.
+A companion manuscript [1] describes in detail the theory, setup, and notation used here.
 The routines are currently written in Matlab.  The 1-D algorithm is complementary to existing 2-D algorithms [4].
 
 
 
 References:
 
-[1] [W. Fox et al., Proton deflectometry analysis in magnetized plasmas: magnetic field reconstruction in 1-D. (2023), arXiv: https://arxiv.org/abs/2309.16165](https://arxiv.org/abs/2309.16165)
+[1] [W. Fox, et al., Proton deflectometry analysis in magnetized plasmas: magnetic field reconstruction in one dimension.  Phys. Rev. E 110, 015206 (2024)](https://doi.org/10.1103/PhysRevE.110.015206). Or see ArXiv: https://arxiv.org/abs/2309.16165 
 
-[2] [N. L. Kugland, et al. Invited Article: Relation between electric and magnetic field structures and their proton-beam images. Review of Scientific Instruments 83, 101301 (2012).](https://doi.org/10.1063/1.4750234)
+[2] [N. L. Kugland, et al. Invited Article: Relation between electric and magnetic field structures and their proton-beam images. Rev. Sci. Instrum. 83, 101301 (2012).](https://doi.org/10.1063/1.4750234)
 
-[3] [D. B. Schaeffer, et al,  Proton imaging of high-energy-density laboratory plasmas. (2023).](https://arxiv.org/abs/2212.08252)
+[3] [D. B. Schaeffer, et al,  Proton imaging of high-energy-density laboratory plasmas. Rev. Mod. Phys. 95, 045007 (2023)](https://doi.org/10.1103/RevModPhys.95.045007)
 
 [4] [Bott, A. F. A. et al. Proton imaging of stochastic magnetic fields. Journal of Plasma Physics 83, (2017).](https://doi.org/10.1017/S0022377817000939);  Implementation: https://github.com/flash-center/PROBLEM
 
