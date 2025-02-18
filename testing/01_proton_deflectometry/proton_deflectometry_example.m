@@ -47,6 +47,7 @@ plot(x * mm_per_m, b * mm_per_m);
 xlabel('x (mm)');
 ylabel('b(x) (T-mm)');
 title('input analytical line-integrated B-field: b(x) = \int dz B_y');
+f = gcf; exportgraphics(f,'01_b_of_x.png','Resolution',400);
 
 % plot x -> x' mapping
 figure;
@@ -54,6 +55,7 @@ plot(x * mm_per_m, xprime * mm_per_m);
 xlabel('x (mm)');
 ylabel('x'' (mm)');
 title('calculated x -> x'' mapping: x'' = x + \xi(x)');
+f = gcf; exportgraphics(f,'02_x_to_xprime.png','Resolution',400);
 
 % plot I0(x) and I(x')
 figure;
@@ -65,6 +67,7 @@ ylabel('fluence (particles/pixel)');
 title('forward model for detector image I(x'') from source fluence I_0(x)');
 legend(gca, 'show');
 hold off;
+f = gcf; exportgraphics(f,'03_I0_source_and_I_detector.png','Resolution',400);
 
 % plot b (from inversion) and b (analytical input)
 figure;
@@ -76,6 +79,7 @@ ylabel('b(x) (T-mm)');
 title('starting b(x) and ending b(x)');
 legend(gca, 'show');
 hold off;
+f = gcf; exportgraphics(f,'04_input_b_and_b_from_inversion.png','Resolution',400);
 
 function b=Fox_Harris_sheet(b0, delta, L_B, x)
 b = b0 * tanh(x/delta) .* (1 - abs(x)/L_B);
